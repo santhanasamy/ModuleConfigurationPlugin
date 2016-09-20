@@ -1,0 +1,3 @@
+rootProject.name = 'ProjectConfigPlugin'
+include 'wag-gradle-plugins'
+findProject(':wag-gradle-plugins')?.name = 'wag-gradle-plugins'

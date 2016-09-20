@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PhotonPlugin.iml" filepath="$PROJECT_DIR$/.idea/modules/PhotonPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wag-gradle-plugins.iml" filepath="$PROJECT_DIR$/.idea/modules/wag-gradle-plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wag-gradle-plugins_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wag-gradle-plugins_main.iml" group="wag-gradle-plugins" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wag-gradle-plugins_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wag-gradle-plugins_test.iml" group="wag-gradle-plugins" />
+    </modules>
+  </component>
+</project>

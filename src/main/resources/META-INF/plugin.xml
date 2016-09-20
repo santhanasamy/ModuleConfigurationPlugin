@@ -1,0 +1,52 @@
+<idea-plugin version="2">
+    <id>org.jetbrains.plugins.sample.ToolWindow</id>
+    <name>Tool Window</name>
+    <description>This sample plugin illustrates how to create your custom tool window.</description>
+    <version>IC-161.1</version>
+    <vendor email="a.santhanasamy@gmail.com" url="http://www.photon.in/">Photon Infotech</vendor>
+
+    <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Module Configuration" secondary="true" icon="/icons/plus.png"
+                    anchor="right"
+                    factoryClass="com.photon.moduleList.ModuleConfigFactory"/>
+
+        <!--      <facetType implementation="com.photon.facet.DemoFacetType"/> -->
+    </extensions>
+
+    <actions>
+        <group id="ProjectConfigPlugin.SampleMenu" text="Photon_Wag" description="Project config menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+
+            <action id="ProjectConfigPlugin.plist2json" class="com.photon.menu.PlistToJson" text="Plist2Json"
+                    description="Convert plist to Json format"/>
+
+            <action id="ProjectConfigPlugin.json2java" class="com.photon.menu.JsonToJava" text="Json2Java"
+                    description="Convert Json to Java class"/>
+
+            <action id="ProjectConfigPlugin.configProfile" class="com.photon.menu.ArtifactProfileConfig"
+                    text="Artifact Profile"
+                    description="Configure artifactory profile"/>
+
+            <action id="ProjectConfigPlugin.configureModule" class="com.photon.menu.ModuleConfig"
+                    text="Configure Modules"
+                    icon="/moduleList/plus.png"
+                    description="Configure modules"/>
+        </group>
+    </actions>
+
+</idea-plugin>

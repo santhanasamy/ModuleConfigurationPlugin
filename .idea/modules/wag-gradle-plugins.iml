@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="wag-gradle-plugins" external.linked.project.path="$MODULE_DIR$/../../wag-gradle-plugins" external.root.project.path="$MODULE_DIR$/../../wag-gradle-plugins" external.system.id="GRADLE" external.system.module.group="com.walgreens.framework" external.system.module.version="1.1.2" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../wag-gradle-plugins">
+      <excludeFolder url="file://$MODULE_DIR$/../../wag-gradle-plugins/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../wag-gradle-plugins/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "org.jetbrains.intellij" version "0.0.20"
+}
+
+apply plugin: 'idea'
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+
+dependencies {
+    compile project(':wag-gradle-plugins')
+    compile files('libs/PlistToJsonConverter_V1.1.jar')
+}
+
+intellij {
+    //version '2016.1'
+    version '15.0.3'
+    //version '15.0.6'
+    //version 'IC-14.1.4' //IntelliJ IDEA dependency
+    plugins 'coverage' //Bundled plugin dependencies
+    pluginName 'ProjectModuleConfig'
+}
+
+//compileJava.options.fork = true
+//compileJava.options.forkOptions.executable = 'C:/Program Files/Java/jdk1.8.0_65/bin/java.exe'
+//
+//compileJava {
+//    sourceCompatibility = '1.8'
+//}
+
+group = "com.walgreens.framework"
+version = '10-1';
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
